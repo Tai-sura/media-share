@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="zh-Hant">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>粵語 TTS 試聽 — GPT-SoVITS vs Edge</title>
+<style>
+  body { margin:0; padding:16px; font:16px/1.55 system-ui,"Microsoft JhengHei",sans-serif; background:#f6f4ef; color:#1d1d1f; }
+  h1 { font-size:20px; margin:0 0 4px; }
+  .sub { margin:0 0 18px; color:#6b6b70; font-size:14px; }
+  .card { background:#fff; border:1px solid #e3ddd2; border-radius:12px; padding:12px 14px; margin:0 0 12px; }
+  .card h2 { font-size:16px; margin:0 0 4px; }
+  .note { margin:0 0 10px; color:#5c5c61; font-size:13px; }
+  audio { width:100%; }
+</style>
+<h1>粵語 TTS 試聽</h1>
+<p class="sub">重點：GPT-SoVITS 接了我們的詞庫 G2P 之後，「凍檸茶」的「檸」讀第 2 聲（升），Edge 讀第 4 聲（降）。</p>
+  <section class="card">
+    <h2>GPT-SoVITS：凍檸茶</h2>
+    <p class="note">詞庫 G2P → dung3 ning2 caa4。檸 = 第 2 聲，F0 升 +5.9 半音</p>
+    <audio controls preload="none" src="gpt-dungningcaa.wav"></audio>
+  </section>
+  <section class="card">
+    <h2>Edge WanLung：凍檸茶</h2>
+    <p class="note">同一句的基準。檸讀成 ning4，F0 下降（我量 −6.6 半音）</p>
+    <audio controls preload="none" src="edge-dungningcaa.mp3"></audio>
+  </section>
+  <section class="card">
+    <h2>GPT-SoVITS：檸茶</h2>
+    <p class="note">對照詞，應 ning2。F0 升 +5.9 半音</p>
+    <audio controls preload="none" src="gpt-ningcaa.wav"></audio>
+  </section>
+  <section class="card">
+    <h2>GPT-SoVITS：檸檬</h2>
+    <p class="note">對照詞，應 ning4 不變調（這句太短，量度偏弱）</p>
+    <audio controls preload="none" src="gpt-ningmung.wav"></audio>
+  </section>
+  <section class="card">
+    <h2>T1 多音字「行」</h2>
+    <p class="note">銀行開九點，我哋行街買嘢。ASR CER 0.18（銀→南，ng- 丟失）</p>
+    <audio controls preload="none" src="gpt-t1.wav"></audio>
+  </section>
+  <section class="card">
+    <h2>T2 多音字「重」</h2>
+    <p class="note">呢個袋好重，你重唔重呀？ASR CER 0.00</p>
+    <audio controls preload="none" src="gpt-t2.wav"></audio>
+  </section>
+  <section class="card">
+    <h2>T3 入聲</h2>
+    <p class="note">一、七、八、十、百，全部係入聲字。ASR CER 0.09</p>
+    <audio controls preload="none" src="gpt-t3.wav"></audio>
+  </section>
+  <section class="card">
+    <h2>T4 語氣詞</h2>
+    <p class="note">去咗啦！係咩？咁犀利喎。ASR CER 0.11</p>
+    <audio controls preload="none" src="gpt-t4.wav"></audio>
+  </section>
+  <section class="card">
+    <h2>T5 九聲六調</h2>
+    <p class="note">詩、史、試、時、市、事。ASR CER 0.82（純聲調序列，ASR 本身無能）</p>
+    <audio controls preload="none" src="gpt-t5.wav"></audio>
+  </section>
+</html>
