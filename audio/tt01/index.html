@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="zh-HK"><head><meta charset="utf-8">
+<title>TT01 粵語急口令 — 引擎並排比對</title>
+<style>
+:root{color-scheme:light dark}
+body{font:15px/1.6 system-ui,"Noto Sans HK",sans-serif;max-width:1180px;margin:24px auto;padding:0 16px}
+h1{font-size:22px;margin:0 0 4px}
+.sub{opacity:.72;font-size:13px;margin-bottom:18px}
+.script{background:#8881;border-left:3px solid #8886;padding:10px 14px;border-radius:6px;margin:14px 0 22px;font-size:14px}
+h2{font-size:17px;margin:26px 0 8px;padding-bottom:4px;border-bottom:1px solid #8884}
+table{border-collapse:collapse;width:100%}
+td{padding:7px 6px;border-bottom:1px solid #8882;vertical-align:middle}
+td.who{width:180px;font-weight:600;font-size:13px;white-space:nowrap}
+td.cer{width:270px;font-size:12px;white-space:nowrap}
+audio{width:340px;height:34px}
+.b{display:inline-block;padding:1px 7px;border-radius:9px;background:#8882;margin-right:4px;font-size:11px}
+.b.good{background:#2e7d3240;color:#2e7d32}
+.b.ok{background:#f9a82540;color:#a06c00}
+.b.bad{background:#c6282840;color:#c62828}
+.note{font-size:12px;opacity:.7;margin-top:6px}
+</style></head><body>
+<h1>TT01 粵語急口令 — 引擎並排比對</h1>
+<div class="sub">同一段文字、預設語速／音高、48 kHz 單聲道 16-bit。全部不加 rate／pitch／style。
+每句並排可點播；數字為機器量度（ASR 回譯 CER、龜→雞 混淆、時長），最後仍以你的耳判斷。</div>
+<div class="script">一蚊一隻雞，七蚊一隻龜，街頭買斤雞，街尾買斤龜。你話雞貴過龜，我話龜貴過雞，究竟係雞貴過龜，定係龜貴過雞？</div>
+
+<h2>第 1 句　<span style="font-weight:400;font-size:13px;opacity:.75">一蚊一隻雞，七蚊一隻龜，</span></h2>
+<table>
+<tr><td class="who">cosy-userS02</td><td><audio controls preload="none" src="wav/cosy-userS02-s01.wav"></audio></td><td class="cer"><span class="b bad">CER 0.40</span><span class="b good">龜→雞 0</span><span class="b"> 3.24s</span></td></tr>
+<tr><td class="who">edge-HiuGaai</td><td><audio controls preload="none" src="wav/edge-HiuGaai-s01.wav"></audio></td><td class="cer"><span class="b bad">CER 0.20</span><span class="b good">龜→雞 0</span><span class="b"> 3.74s</span></td></tr>
+<tr><td class="who">edge-HiuMaan</td><td><audio controls preload="none" src="wav/edge-HiuMaan-s01.wav"></audio></td><td class="cer"><span class="b good">CER 0.00</span><span class="b good">龜→雞 0</span><span class="b"> 3.31s</span></td></tr>
+<tr><td class="who">edge-WanLung</td><td><audio controls preload="none" src="wav/edge-WanLung-s01.wav"></audio></td><td class="cer"><span class="b good">CER 0.00</span><span class="b good">龜→雞 0</span><span class="b"> 3.38s</span></td></tr>
+<tr><td class="who">onecore-Danny</td><td><audio controls preload="none" src="wav/onecore-Danny-s01.wav"></audio></td><td class="cer"><span class="b good">CER 0.00</span><span class="b good">龜→雞 0</span><span class="b"> 3.71s</span></td></tr>
+<tr><td class="who">sapi-Tracy</td><td><audio controls preload="none" src="wav/sapi-Tracy-s01.wav"></audio></td><td class="cer"><span class="b good">CER 0.00</span><span class="b good">龜→雞 0</span><span class="b"> 3.29s</span></td></tr>
+<tr><td class="who">sovits-ft</td><td><audio controls preload="none" src="wav/sovits-ft-e30-s01.wav"></audio></td><td class="cer"><span class="b ok">CER 0.10</span><span class="b good">龜→雞 0</span><span class="b"> 3.58s</span></td></tr>
+</table>
+<h2>第 2 句　<span style="font-weight:400;font-size:13px;opacity:.75">街頭買斤雞，街尾買斤龜。</span></h2>
+<table>
+<tr><td class="who">cosy-userS02</td><td><audio controls preload="none" src="wav/cosy-userS02-s02.wav"></audio></td><td class="cer"><span class="b bad">CER 0.60</span><span class="b good">龜→雞 0</span><span class="b"> 3.48s</span></td></tr>
+<tr><td class="who">edge-HiuGaai</td><td><audio controls preload="none" src="wav/edge-HiuGaai-s02.wav"></audio></td><td class="cer"><span class="b bad">CER 0.20</span><span class="b good">龜→雞 0</span><span class="b"> 3.89s</span></td></tr>
+<tr><td class="who">edge-HiuMaan</td><td><audio controls preload="none" src="wav/edge-HiuMaan-s02.wav"></audio></td><td class="cer"><span class="b bad">CER 0.20</span><span class="b good">龜→雞 0</span><span class="b"> 3.55s</span></td></tr>
+<tr><td class="who">edge-WanLung</td><td><audio controls preload="none" src="wav/edge-WanLung-s02.wav"></audio></td><td class="cer"><span class="b bad">CER 0.30</span><span class="b good">龜→雞 0</span><span class="b"> 3.65s</span></td></tr>
+<tr><td class="who">onecore-Danny</td><td><audio controls preload="none" src="wav/onecore-Danny-s02.wav"></audio></td><td class="cer"><span class="b ok">CER 0.10</span><span class="b good">龜→雞 0</span><span class="b"> 3.78s</span></td></tr>
+<tr><td class="who">sapi-Tracy</td><td><audio controls preload="none" src="wav/sapi-Tracy-s02.wav"></audio></td><td class="cer"><span class="b good">CER 0.00</span><span class="b good">龜→雞 0</span><span class="b"> 3.55s</span></td></tr>
+<tr><td class="who">sovits-ft</td><td><audio controls preload="none" src="wav/sovits-ft-e30-s02.wav"></audio></td><td class="cer"><span class="b bad">CER 0.80</span><span class="b good">龜→雞 0</span><span class="b"> 5.38s</span></td></tr>
+</table>
+<h2>第 3 句（貴／龜 同句對比）　<span style="font-weight:400;font-size:13px;opacity:.75">你話雞貴過龜，我話龜貴過雞，</span></h2>
+<table>
+<tr><td class="who">cosy-userS02</td><td><audio controls preload="none" src="wav/cosy-userS02-s03.wav"></audio></td><td class="cer"><span class="b bad">CER 1.08</span><span class="b good">龜→雞 0</span><span class="b"> 10.84s</span></td></tr>
+<tr><td class="who">edge-HiuGaai</td><td><audio controls preload="none" src="wav/edge-HiuGaai-s03.wav"></audio></td><td class="cer"><span class="b ok">CER 0.08</span><span class="b good">龜→雞 0</span><span class="b"> 4.44s</span></td></tr>
+<tr><td class="who">edge-HiuMaan</td><td><audio controls preload="none" src="wav/edge-HiuMaan-s03.wav"></audio></td><td class="cer"><span class="b good">CER 0.00</span><span class="b good">龜→雞 0</span><span class="b"> 3.86s</span></td></tr>
+<tr><td class="who">edge-WanLung</td><td><audio controls preload="none" src="wav/edge-WanLung-s03.wav"></audio></td><td class="cer"><span class="b ok">CER 0.08</span><span class="b good">龜→雞 0</span><span class="b"> 4.10s</span></td></tr>
+<tr><td class="who">onecore-Danny</td><td><audio controls preload="none" src="wav/onecore-Danny-s03.wav"></audio></td><td class="cer"><span class="b good">CER 0.00</span><span class="b good">龜→雞 0</span><span class="b"> 4.30s</span></td></tr>
+<tr><td class="who">sapi-Tracy</td><td><audio controls preload="none" src="wav/sapi-Tracy-s03.wav"></audio></td><td class="cer"><span class="b ok">CER 0.08</span><span class="b good">龜→雞 0</span><span class="b"> 4.04s</span></td></tr>
+<tr><td class="who">sovits-ft</td><td><audio controls preload="none" src="wav/sovits-ft-e30-s03.wav"></audio></td><td class="cer"><span class="b bad">CER 0.42</span><span class="b good">龜→雞 0</span><span class="b"> 4.30s</span></td></tr>
+</table>
+<h2>第 4 句　<span style="font-weight:400;font-size:13px;opacity:.75">究竟係雞貴過龜，定係龜貴過雞？</span></h2>
+<table>
+<tr><td class="who">cosy-userS02</td><td><audio controls preload="none" src="wav/cosy-userS02-s04.wav"></audio></td><td class="cer"><span class="b bad">CER 0.54</span><span class="b good">龜→雞 0</span><span class="b"> 5.04s</span></td></tr>
+<tr><td class="who">edge-HiuGaai</td><td><audio controls preload="none" src="wav/edge-HiuGaai-s04.wav"></audio></td><td class="cer"><span class="b ok">CER 0.08</span><span class="b good">龜→雞 0</span><span class="b"> 4.70s</span></td></tr>
+<tr><td class="who">edge-HiuMaan</td><td><audio controls preload="none" src="wav/edge-HiuMaan-s04.wav"></audio></td><td class="cer"><span class="b good">CER 0.00</span><span class="b good">龜→雞 0</span><span class="b"> 3.91s</span></td></tr>
+<tr><td class="who">edge-WanLung</td><td><audio controls preload="none" src="wav/edge-WanLung-s04.wav"></audio></td><td class="cer"><span class="b ok">CER 0.08</span><span class="b good">龜→雞 0</span><span class="b"> 4.15s</span></td></tr>
+<tr><td class="who">onecore-Danny</td><td><audio controls preload="none" src="wav/onecore-Danny-s04.wav"></audio></td><td class="cer"><span class="b good">CER 0.00</span><span class="b good">龜→雞 0</span><span class="b"> 4.63s</span></td></tr>
+<tr><td class="who">sapi-Tracy</td><td><audio controls preload="none" src="wav/sapi-Tracy-s04.wav"></audio></td><td class="cer"><span class="b bad">CER 0.15</span><span class="b good">龜→雞 0</span><span class="b"> 4.25s</span></td></tr>
+<tr><td class="who">sovits-ft</td><td><audio controls preload="none" src="wav/sovits-ft-e30-s04.wav"></audio></td><td class="cer"><span class="b bad">CER 0.54</span><span class="b good">龜→雞 0</span><span class="b"> 4.66s</span></td></tr>
+</table>
+<h2>全段（急口令壓力）　<span style="font-weight:400;font-size:13px;opacity:.75">一蚊一隻雞，七蚊一隻龜，街頭買斤雞，街尾買斤龜。你話雞貴過龜，我話龜貴過雞，究竟係雞貴過龜，定係龜貴過雞？</span></h2>
+<table>
+<tr><td class="who">cosy-userS02</td><td><audio controls preload="none" src="wav/cosy-userS02-full.wav"></audio></td><td class="cer"><span class="b bad">CER 0.58</span><span class="b good">龜→雞 0</span><span class="b"> 12.92s</span></td></tr>
+<tr><td class="who">edge-HiuGaai</td><td><audio controls preload="none" src="wav/edge-HiuGaai-full.wav"></audio></td><td class="cer"><span class="b ok">CER 0.07</span><span class="b good">龜→雞 0</span><span class="b"> 15.70s</span></td></tr>
+<tr><td class="who">edge-HiuMaan</td><td><audio controls preload="none" src="wav/edge-HiuMaan-full.wav"></audio></td><td class="cer"><span class="b good">CER 0.00</span><span class="b good">龜→雞 0</span><span class="b"> 12.70s</span></td></tr>
+<tr><td class="who">edge-WanLung</td><td><audio controls preload="none" src="wav/edge-WanLung-full.wav"></audio></td><td class="cer"><span class="b good">CER 0.04</span><span class="b good">龜→雞 0</span><span class="b"> 12.84s</span></td></tr>
+<tr><td class="who">onecore-Danny</td><td><audio controls preload="none" src="wav/onecore-Danny-full.wav"></audio></td><td class="cer"><span class="b good">CER 0.00</span><span class="b good">龜→雞 0</span><span class="b"> 15.23s</span></td></tr>
+<tr><td class="who">sapi-Tracy</td><td><audio controls preload="none" src="wav/sapi-Tracy-full.wav"></audio></td><td class="cer"><span class="b good">CER 0.04</span><span class="b good">龜→雞 0</span><span class="b"> 13.88s</span></td></tr>
+<tr><td class="who">sovits-ft</td><td><audio controls preload="none" src="wav/sovits-ft-e30-full.wav"></audio></td><td class="cer"><span class="b bad">CER 0.36</span><span class="b good">龜→雞 0</span><span class="b"> 16.02s</span></td></tr>
+</table>
+
+<h2>點聽</h2>
+<div class="note">
+建議順序：先聽同一句的 6 條，逐個 A/B；再看 CER 與「龜→雞」。<br>
+CER 只反映「ASR 聽成甚麼」，抓不到語氣與自然度；龜→雞 是急口令的核心弱點（漏 -w- 介音）。<br>
+CosyVoice2 與 GPT-SoVITS 兩條是克隆引擎，參考音同為用戶本人 <code>tai-clean/refs/s02.wav</code>，所以「像不像你」也一併聽得到。
+</div>
+</body></html>
